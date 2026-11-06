@@ -232,22 +232,22 @@
 
 **EN: Standard form of first-order linear ODE:**
 
-$$\frac{dy}{dx} + P(x)y = Q(x)$$
+$$\\frac{dy}{dx} + P(x)y = Q(x)$$
 
 **积分因子法四步（背下来）：**
 
 **EN: Four steps of the integrating factor method (memorize this):**
 
-1. 算积分因子  $\mu(x) = e^{\int P(x)\, dx}$
-2. 两边乘 $\mu(x)$ → 左边凑成 $\frac{d}{dx}[\mu(x) \cdot y]$
-3. 两边积分 → $\mu(x) \cdot y = \int \mu(x) Q(x)\, dx + C$
-4. 解出 $y$ → $y = \frac{1}{\mu(x)} \left[ \int \mu(x) Q(x)\, dx + C \right]$"
+1. 算积分因子  $\\mu(x) = e^{\\int P(x)\\, dx}$
+2. 两边乘 $\\mu(x)$ → 左边凑成 $\\frac{d}{dx}[\\mu(x) \\cdot y]$
+3. 两边积分 → $\\mu(x) \\cdot y = \\int \\mu(x) Q(x)\\, dx + C$
+4. 解出 $y$ → $y = \\frac{1}{\\mu(x)} \\left[ \\int \\mu(x) Q(x)\\, dx + C \\right]$"
 
 **Euler 法（显式欧拉，数值解必考）：**
 
 **EN: Euler method (explicit Euler, guaranteed for numerical solutions):**
 
-$$y_{n+1} = y_n + h \cdot f(x_n, y_n)$$
+$$y_{n+1} = y_n + h \\cdot f(x_n, y_n)$$
 
 就是：**下一个点 = 当前点 + 步长 × 当前斜率**
 
@@ -261,7 +261,7 @@ $$k_1 = f(x_n, y_n)$$
 $$k_2 = f(x_n + h/2, y_n + h k_1/2)$$
 $$k_3 = f(x_n + h/2, y_n + h k_2/2)$$
 $$k_4 = f(x_n + h, y_n + h k_3)$$
-$$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
+$$y_{n+1} = y_n + \\frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 
 ---
 
@@ -275,10 +275,10 @@ $$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
 Step 1: $P(x) = -2$, $Q(x) = e^{3x}$
-Step 2: $\mu(x) = e^{\int (-2)\, dx} = e^{-2x}$
-Step 3: $e^{-2x} \cdot y' - 2e^{-2x} \cdot y = e^{x}$  →  $\frac{d}{dx}[e^{-2x} \cdot y] = e^{x}$
-Step 4: $e^{-2x} \cdot y = \int e^{x}\, dx = e^{x} + C$
-Step 5: $y = e^{3x} + C \cdot e^{2x}$
+Step 2: $\\mu(x) = e^{\\int (-2)\\, dx} = e^{-2x}$
+Step 3: $e^{-2x} \\cdot y' - 2e^{-2x} \\cdot y = e^{x}$  →  $\\frac{d}{dx}[e^{-2x} \\cdot y] = e^{x}$
+Step 4: $e^{-2x} \\cdot y = \\int e^{x}\\, dx = e^{x} + C$
+Step 5: $y = e^{3x} + C \\cdot e^{2x}$
 Step 6: $y(0) = 0$ → $0 = 1 + C$ → $C = -1$ → $y = e^{3x} - e^{2x}$
 
 </details>
@@ -312,13 +312,13 @@ x3=0.3, y3 = 1.22 + 0.1*(1.22+0.2) = 1.3622
 | # | 题目 (Question) | 难度 (Difficulty) |
 |---|----------------|-------------------|
 | 1 | 求解 $y' + 3y = 6$ | 基础 |
-| 2 | 求解 $y' - y = \cos x$，$y(0) = 1$ | 中等 |
+| 2 | 求解 $y' - y = \\cos x$，$y(0) = 1$ | 中等 |
 | 3 | Euler h=0.2 解 $y' = 2y - x$，$y(0)=1$，到 x=0.4 | 基础 |
 | 4 | RK4 h=0.1 解 $y' = x - y$，$y(0)=2$，到 x=0.2 | 中等 |
 
 **EN:**
 1. Solve $y' + 3y = 6$ — Basic
-2. Solve $y' - y = \cos x$, $y(0) = 1$ — Medium
+2. Solve $y' - y = \\cos x$, $y(0) = 1$ — Medium
 3. Euler h=0.2 solve $y' = 2y - x$, $y(0)=1$, to x=0.4 — Basic
 4. RK4 h=0.1 solve $y' = x - y$, $y(0)=2$, to x=0.2 — Medium
 
@@ -334,7 +334,7 @@ x3=0.3, y3 = 1.22 + 0.1*(1.22+0.2) = 1.3622
 
 **EN: Eigenvalues & Eigenvectors:**
 
-$$A\mathbf{v} = \lambda\mathbf{v} \quad \Rightarrow \quad \det(A - \lambda I) = 0$$
+$$A\\mathbf{v} = \\lambda\\mathbf{v} \\quad \\Rightarrow \\quad \\det(A - \\lambda I) = 0$$
 
 **PCA 和特征值（面经高频追问，必须能说）：**
 
@@ -342,56 +342,56 @@ $$A\mathbf{v} = \lambda\mathbf{v} \quad \Rightarrow \quad \det(A - \lambda I) = 
 
 > PCA 就是对**协方差矩阵**做特征值分解。
 > 
-> - 特征值 $\lambda_i$ = 对应方向上的**方差大小**
+> - 特征值 $\\lambda_i$ = 对应方向上的**方差大小**
 > - 特征向量 = 主成分的**方向**
-> - 按 $\lambda_1 \geq \lambda_2 \geq \cdots$ 排序，取前 k 个 → 保留最多的方差
+> - 按 $\\lambda_1 \\geq \\lambda_2 \\geq \\cdots$ 排序，取前 k 个 → 保留最多的方差
 
 **EN:**
 > PCA is simply eigenvalue decomposition on the **covariance matrix**.
 > 
-> - Eigenvalue $\lambda_i$ = the **amount of variance** in the corresponding direction
+> - Eigenvalue $\\lambda_i$ = the **amount of variance** in the corresponding direction
 > - Eigenvector = the **direction** of the principal component
-> - Sort by $\lambda_1 \geq \lambda_2 \geq \cdots$, take the top k → preserves the most variance
+> - Sort by $\\lambda_1 \\geq \\lambda_2 \\geq \\cdots$, take the top k → preserves the most variance
 
 **矩阵的秩：**
 
 **EN: Matrix rank:**
 
 - 线性无关行/列的最大数量
-- 满秩 $\iff$ $\det(A) \neq 0$ $\iff$ 可逆
+- 满秩 $\\iff$ $\\det(A) \\neq 0$ $\\iff$ 可逆
 
 **EN:**
 - The maximum number of linearly independent rows/columns
-- Full rank $\iff$ $\det(A) \neq 0$ $\iff$ invertible
+- Full rank $\\iff$ $\\det(A) \\neq 0$ $\\iff$ invertible
 
 ---
 
 ### 🎯 真题手算
 ### 🎯 Real Interview Questions — Work Them Out
 
-**真题 1：** 求 $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ 的特征值和特征向量
+**真题 1：** 求 $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$ 的特征值和特征向量
 
-**EN: Real question 1:** Find the eigenvalues and eigenvectors of $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$
+**EN: Real question 1:** Find the eigenvalues and eigenvectors of $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$
 
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
-$\det(A - \lambda I) = 0$:
+$\\det(A - \\lambda I) = 0$:
 
-$$\begin{vmatrix} 2-\lambda & 1 \\ 1 & 2-\lambda \end{vmatrix} = 0$$
+$$\\begin{vmatrix} 2-\\lambda & 1 \\\\ 1 & 2-\\lambda \\end{vmatrix} = 0$$
 
-$(2-\lambda)^2 - 1 = 0$ → $\lambda^2 - 4\lambda + 3 = 0$ → $\lambda_1 = 1$, $\lambda_2 = 3$
+$(2-\\lambda)^2 - 1 = 0$ → $\\lambda^2 - 4\\lambda + 3 = 0$ → $\\lambda_1 = 1$, $\\lambda_2 = 3$
 
-$\lambda_1 = 1$: $(A-I)\mathbf{v} = 0$ → $\mathbf{v}_1 = (1, -1)^T$
+$\\lambda_1 = 1$: $(A-I)\\mathbf{v} = 0$ → $\\mathbf{v}_1 = (1, -1)^T$
 
-$\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → $\mathbf{v}_2 = (1, 1)^T$
+$\\lambda_2 = 3$: $(A-3I)\\mathbf{v} = 0$ → $\\mathbf{v}_2 = (1, 1)^T$
 
 </details>
 
 ---
 
-**真题 2：** 矩阵 $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$ 的秩？为什么？
+**真题 2：** 矩阵 $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\end{pmatrix}$ 的秩？为什么？
 
-**EN: Real question 2:** What is the rank of $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$? Why?
+**EN: Real question 2:** What is the rank of $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\end{pmatrix}$? Why?
 
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
@@ -415,13 +415,13 @@ So there is only 1 linearly independent row → rank = 1.
 
 | # | 题目 (Question) | 难度 (Difficulty) |
 |---|----------------|-------------------|
-| 1 | $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ 的特征值 | 基础 |
-| 2 | $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$ 的秩 | 中等 |
+| 1 | $A = \\begin{pmatrix} 3 & 1 \\\\ 0 & 2 \\end{pmatrix}$ 的特征值 | 基础 |
+| 2 | $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$ 的秩 | 中等 |
 | 3 | 为什么 PCA 要找最大的特征值？（用嘴说出来） | 中等 |
 
 **EN:**
-1. Eigenvalues of $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ — Basic
-2. Rank of $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$ — Medium
+1. Eigenvalues of $A = \\begin{pmatrix} 3 & 1 \\\\ 0 & 2 \\end{pmatrix}$ — Basic
+2. Rank of $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$ — Medium
 3. Why does PCA look for the largest eigenvalues? (Explain verbally) — Medium
 
 ---
@@ -436,7 +436,7 @@ So there is only 1 linearly independent row → rank = 1.
 
 **EN: Gradient descent (asked in interviews):**
 
-$$\theta_{t+1} = \theta_t - \eta \cdot \nabla_\theta J(\theta)$$
+$$\\theta_{t+1} = \\theta_t - \\eta \\cdot \\nabla_\\theta J(\\theta)$$
 
 > 梯度指向**损失上升最快**的方向 → 负梯度就是**下降最快**的方向。
 
@@ -447,9 +447,9 @@ $$\theta_{t+1} = \theta_t - \eta \cdot \nabla_\theta J(\theta)$$
 
 **EN: Local maximum:** A position that is larger than both its left and right neighbors (tested together with coding questions)
 
-**95% 置信区间：** $\bar{x} \pm 1.96 \cdot \frac{\sigma}{\sqrt{n}}$
+**95% 置信区间：** $\\bar{x} \\pm 1.96 \\cdot \\frac{\\sigma}{\\sqrt{n}}$
 
-**EN: 95% confidence interval:** $\bar{x} \pm 1.96 \cdot \frac{\sigma}{\sqrt{n}}$
+**EN: 95% confidence interval:** $\\bar{x} \\pm 1.96 \\cdot \\frac{\\sigma}{\\sqrt{n}}$
 
 ---
 

@@ -48,29 +48,29 @@ Part V   Quick Reference Comparison with IC EDMSL Main Handbook
 
 | 方法 | 适用场景 | 示例 |
 |------|----------|------|
-| 代入法 | 直接代入 x = a 得有限值 | $\lim_{x \to 2} \frac{x+1}{x-1} = 3$ |
-| 洛必达法则 | $\frac{0}{0}$ 或 $\frac{\infty}{\infty}$ | $\lim_{x \to 0} \frac{\sin x}{x} = 1$ |
-| 因式分解 | $\frac{0}{0}$ 型，可约项 | $\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = 2$ |
-| 等价无穷小替换 | 复杂乘积型 | $x \to 0$ 时，$\sin x \sim x$，$e^x - 1 \sim x$ |
+| 代入法 | 直接代入 x = a 得有限值 | $\\lim_{x \\to 2} \\frac{x+1}{x-1} = 3$ |
+| 洛必达法则 | $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ | $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$ |
+| 因式分解 | $\\frac{0}{0}$ 型，可约项 | $\\lim_{x \\to 1} \\frac{x^2 - 1}{x - 1} = 2$ |
+| 等价无穷小替换 | 复杂乘积型 | $x \\to 0$ 时，$\\sin x \\sim x$，$e^x - 1 \\sim x$ |
 
 **EN:**
 | Method | Use Case | Example |
 |--------|----------|---------|
-| Substitution | Direct substitution gives finite value | $\lim_{x \to 2} \frac{x+1}{x-1} = 3$ |
-| L'Hôpital's Rule | $\frac{0}{0}$ or $\frac{\infty}{\infty}$ | $\lim_{x \to 0} \frac{\sin x}{x} = 1$ |
-| Factoring | $\frac{0}{0}$ form with cancellable terms | $\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = 2$ |
-| Equivalent Infinitesimal Substitution | Complex product forms | As $x \to 0$, $\sin x \sim x$, $e^x - 1 \sim x$ |
+| Substitution | Direct substitution gives finite value | $\\lim_{x \\to 2} \\frac{x+1}{x-1} = 3$ |
+| L'Hôpital's Rule | $\\frac{0}{0}$ or $\\frac{\\infty}{\\infty}$ | $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$ |
+| Factoring | $\\frac{0}{0}$ form with cancellable terms | $\\lim_{x \\to 1} \\frac{x^2 - 1}{x - 1} = 2$ |
+| Equivalent Infinitesimal Substitution | Complex product forms | As $x \\to 0$, $\\sin x \\sim x$, $e^x - 1 \\sim x$ |
 
-**连续性判断：** $f(x)$ 在 $x=a$ 连续 $\iff$ $\lim_{x \to a} f(x) = f(a)$
-**EN: Continuity Check:** $f(x)$ is continuous at $x=a$ $\iff$ $\lim_{x \to a} f(x) = f(a)$
+**连续性判断：** $f(x)$ 在 $x=a$ 连续 $\\iff$ $\\lim_{x \\to a} f(x) = f(a)$
+**EN: Continuity Check:** $f(x)$ is continuous at $x=a$ $\\iff$ $\\lim_{x \\to a} f(x) = f(a)$
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** 求 $\lim_{x \to 0} \frac{e^{2x} - 1}{x}$
-**EN: Example 1:** Find $\lim_{x \to 0} \frac{e^{2x} - 1}{x}$
+**例题 1：** 求 $\\lim_{x \\to 0} \\frac{e^{2x} - 1}{x}$
+**EN: Example 1:** Find $\\lim_{x \\to 0} \\frac{e^{2x} - 1}{x}$
 
 **解答：**
 **EN: Solution:**
@@ -81,8 +81,8 @@ Part V   Quick Reference Comparison with IC EDMSL Main Handbook
 lim (2e^{2x}) / 1 = 2e^0 = 2
 ```
 
-**例题 2：** 求 $\lim_{x \to \infty} \frac{3x^2 + 2x}{x^2 - 1}$
-**EN: Example 2:** Find $\lim_{x \to \infty} \frac{3x^2 + 2x}{x^2 - 1}$
+**例题 2：** 求 $\\lim_{x \\to \\infty} \\frac{3x^2 + 2x}{x^2 - 1}$
+**EN: Example 2:** Find $\\lim_{x \\to \\infty} \\frac{3x^2 + 2x}{x^2 - 1}$
 
 **解答：**
 **EN: Solution:**
@@ -108,16 +108,16 @@ lim (2e^{2x}) / 1 = 2e^0 = 2
 |------|------|
 | 幂函数 | $(x^n)' = nx^{n-1}$ |
 | 乘积 | $(uv)' = u'v + uv'$ |
-| 商 | $\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}$ |
-| 链式 | $[f(g(x))]' = f'(g(x)) \cdot g'(x)$ |
+| 商 | $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$ |
+| 链式 | $[f(g(x))]' = f'(g(x)) \\cdot g'(x)$ |
 
 **EN:**
 | Rule | Formula |
 |------|---------|
 | Power Rule | $(x^n)' = nx^{n-1}$ |
 | Product Rule | $(uv)' = u'v + uv'$ |
-| Quotient Rule | $\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}$ |
-| Chain Rule | $[f(g(x))]' = f'(g(x)) \cdot g'(x)$ |
+| Quotient Rule | $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$ |
+| Chain Rule | $[f(g(x))]' = f'(g(x)) \\cdot g'(x)$ |
 
 **导数应用 — 极值：** $f'(x) = 0$ 处可能有极值，二阶导数判断：
 **EN: Application of Derivatives — Extrema:** Extrema may occur where $f'(x) = 0$, use second derivative test:
@@ -129,19 +129,19 @@ lim (2e^{2x}) / 1 = 2e^0 = 2
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** 求 $y = x^3 \cdot e^x$ 的导数
-**EN: Example 1:** Find the derivative of $y = x^3 \cdot e^x$
+**例题 1：** 求 $y = x^3 \\cdot e^x$ 的导数
+**EN: Example 1:** Find the derivative of $y = x^3 \\cdot e^x$
 
 乘积法则：$u = x^3$, $v = e^x$
 
-$y' = 3x^2 \cdot e^x + x^3 \cdot e^x = e^x(3x^2 + x^3)$
+$y' = 3x^2 \\cdot e^x + x^3 \\cdot e^x = e^x(3x^2 + x^3)$
 
-**例题 2：** 求 $y = \ln(x^2 + 1)$ 的导数
-**EN: Example 2:** Find the derivative of $y = \ln(x^2 + 1)$
+**例题 2：** 求 $y = \\ln(x^2 + 1)$ 的导数
+**EN: Example 2:** Find the derivative of $y = \\ln(x^2 + 1)$
 
-链式法则：外层 $f(u) = \ln u$, 内层 $g(x) = x^2 + 1$
+链式法则：外层 $f(u) = \\ln u$, 内层 $g(x) = x^2 + 1$
 
-$y' = \frac{1}{x^2+1} \cdot 2x = \frac{2x}{x^2+1}$
+$y' = \\frac{1}{x^2+1} \\cdot 2x = \\frac{2x}{x^2+1}$
 
 **例题 3：** 求 $f(x) = x^4 - 2x^2 + 1$ 的极值
 **EN: Example 3:** Find the extrema of $f(x) = x^4 - 2x^2 + 1$
@@ -169,40 +169,40 @@ f''(1) = 8 > 0 → x=1 极小值点，f(1)=0
 
 | 被积函数 | 积分结果 |
 |----------|----------|
-| $x^n$ ($n \neq -1$) | $\frac{x^{n+1}}{n+1} + C$ |
-| $\frac{1}{x}$ | $\ln|x| + C$ |
+| $x^n$ ($n \\neq -1$) | $\\frac{x^{n+1}}{n+1} + C$ |
+| $\\frac{1}{x}$ | $\\ln|x| + C$ |
 | $e^x$ | $e^x + C$ |
-| $\sin x$ | $-\cos x + C$ |
-| $\cos x$ | $\sin x + C$ |
+| $\\sin x$ | $-\\cos x + C$ |
+| $\\cos x$ | $\\sin x + C$ |
 
 **EN:**
 | Integrand | Integral Result |
 |-----------|-----------------|
-| $x^n$ ($n \neq -1$) | $\frac{x^{n+1}}{n+1} + C$ |
-| $\frac{1}{x}$ | $\ln|x| + C$ |
+| $x^n$ ($n \\neq -1$) | $\\frac{x^{n+1}}{n+1} + C$ |
+| $\\frac{1}{x}$ | $\\ln|x| + C$ |
 | $e^x$ | $e^x + C$ |
-| $\sin x$ | $-\cos x + C$ |
-| $\cos x$ | $\sin x + C$ |
+| $\\sin x$ | $-\\cos x + C$ |
+| $\\cos x$ | $\\sin x + C$ |
 
 **积分方法：**
 **EN: Integration Methods:**
-- **换元积分 / Substitution:** $\int f(g(x))g'(x)dx$，令 $u = g(x)$ / let $u = g(x)$
-- **分部积分 / Integration by Parts:** $\int u dv = uv - \int v du$
+- **换元积分 / Substitution:** $\\int f(g(x))g'(x)dx$，令 $u = g(x)$ / let $u = g(x)$
+- **分部积分 / Integration by Parts:** $\\int u dv = uv - \\int v du$
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** $\int x \cdot e^x dx$
-**EN: Example 1:** $\int x \cdot e^x dx$
+**例题 1：** $\\int x \\cdot e^x dx$
+**EN: Example 1:** $\\int x \\cdot e^x dx$
 
-分部积分：$u = x$, $dv = e^x\, dx$ → $du = dx$, $v = e^x$
+分部积分：$u = x$, $dv = e^x\\, dx$ → $du = dx$, $v = e^x$
 
-$\int x \cdot e^x\, dx = x \cdot e^x - \int e^x\, dx = e^x(x-1) + C$
+$\\int x \\cdot e^x\\, dx = x \\cdot e^x - \\int e^x\\, dx = e^x(x-1) + C$
 
-**例题 2：** $\int_0^2 (x^2 - 1) dx$
-**EN: Example 2:** $\int_0^2 (x^2 - 1) dx$
+**例题 2：** $\\int_0^2 (x^2 - 1) dx$
+**EN: Example 2:** $\\int_0^2 (x^2 - 1) dx$
 
 ```
 先求不定积分：[x³/3 - x]₀² = (8/3 - 2) - 0 = 2/3
@@ -219,24 +219,24 @@ $\int x \cdot e^x\, dx = x \cdot e^x - \int e^x\, dx = e^x(x-1) + C$
 ### 📑 知识卡片
 ### 📑 Knowledge Card
 
-**矩阵乘法：** $C_{ij} = \sum_{k=1}^n A_{ik} B_{kj}$
-**EN: Matrix Multiplication:** $C_{ij} = \sum_{k=1}^n A_{ik} B_{kj}$
+**矩阵乘法：** $C_{ij} = \\sum_{k=1}^n A_{ik} B_{kj}$
+**EN: Matrix Multiplication:** $C_{ij} = \\sum_{k=1}^n A_{ik} B_{kj}$
 
-**2×2 行列式：** $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$
-**EN: 2×2 Determinant:** $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$
+**2×2 行列式：** $\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc$
+**EN: 2×2 Determinant:** $\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc$
 
 **3×3 行列式（按第一行展开）：**
 **EN: 3×3 Determinant (expanding along the first row):**
 
-$$\det\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} = a(ei - fh) - b(di - fg) + c(dh - eg)$$
+$$\\det\\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} = a(ei - fh) - b(di - fg) + c(dh - eg)$$
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \times \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$
-**EN: Example 1:** $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \times \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$
+**例题 1：** $\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} \\times \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}$
+**EN: Example 1:** $\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} \\times \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}$
 
 ```
 C₁₁=1×5+2×7=19, C₁₂=1×6+2×8=22
@@ -244,8 +244,8 @@ C₂₁=3×5+4×7=43, C₂₂=3×6+4×8=50
 → [[19,22],[43,50]]
 ```
 
-**例题 2：** $\det\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$
-**EN: Example 2:** $\det\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$
+**例题 2：** $\\det\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$
+**EN: Example 2:** $\\det\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$
 
 ```
 = 1×(45-48) - 2×(36-42) + 3×(32-35)
@@ -271,16 +271,16 @@ C₂₁=3×5+4×7=43, C₂₂=3×6+4×8=50
 2. 某行乘非零常数 / Multiply a row by a non-zero constant
 3. 某行加另一行的倍数 / Add a multiple of one row to another row
 
-**重要性质：** $n \times n$ 矩阵满秩 $\iff$ $\det(A) \neq 0$ $\iff$ $A$ 可逆
-**EN: Important Property:** An $n \times n$ matrix has full rank $\iff$ $\det(A) \neq 0$ $\iff$ $A$ is invertible
+**重要性质：** $n \\times n$ 矩阵满秩 $\\iff$ $\\det(A) \\neq 0$ $\\iff$ $A$ 可逆
+**EN: Important Property:** An $n \\times n$ matrix has full rank $\\iff$ $\\det(A) \\neq 0$ $\\iff$ $A$ is invertible
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 求 $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 0 & 1 \end{pmatrix}$ 的秩
-**EN: Example:** Find the rank of $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 0 & 1 \end{pmatrix}$
+**例题：** 求 $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\\\ 1 & 0 & 1 \\end{pmatrix}$ 的秩
+**EN: Example:** Find the rank of $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\\\ 1 & 0 & 1 \\end{pmatrix}$
 
 ```
 行变换：
@@ -299,19 +299,19 @@ R₃ = R₃ - R₁ → [[1, 2, 3], [0, 0, 0], [0, -2, -2]]
 ### 📑 知识卡片
 ### 📑 Knowledge Card
 
-**方法一（2×2 简单）：** $A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$
-**EN: Method 1 (simple for 2×2):** $A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$
+**方法一（2×2 简单）：** $A^{-1} = \\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$
+**EN: Method 1 (simple for 2×2):** $A^{-1} = \\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$
 
-**方法二（通用）：** 高斯-约旦消元 $[A|I] \to [I|A^{-1}]$
-**EN: Method 2 (general):** Gauss-Jordan elimination $[A|I] \to [I|A^{-1}]$
+**方法二（通用）：** 高斯-约旦消元 $[A|I] \\to [I|A^{-1}]$
+**EN: Method 2 (general):** Gauss-Jordan elimination $[A|I] \\to [I|A^{-1}]$
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 求 $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ 的逆
-**EN: Example:** Find the inverse of $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$
+**例题：** 求 $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$ 的逆
+**EN: Example:** Find the inverse of $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$
 
 ```
 det(A) = 4 - 1 = 3
@@ -329,13 +329,13 @@ A⁻¹ = (1/3) × [[2, -1], [-1, 2]] = [[2/3, -1/3], [-1/3, 2/3]]
 ### 📑 知识卡片
 ### 📑 Knowledge Card
 
-**定义：** $A\mathbf{v} = \lambda\mathbf{v}$
-**EN: Definition:** $A\mathbf{v} = \lambda\mathbf{v}$
+**定义：** $A\\mathbf{v} = \\lambda\\mathbf{v}$
+**EN: Definition:** $A\\mathbf{v} = \\lambda\\mathbf{v}$
 
 **求解步骤：**
 **EN: Solution Steps:**
-1. 解特征方程 $\det(A - \lambda I) = 0$ 得特征值 / Solve characteristic equation $\det(A - \lambda I) = 0$ to get eigenvalues
-2. 对每个 $\lambda$，解 $(A - \lambda I)\mathbf{v} = \mathbf{0}$ 得特征向量 / For each $\lambda$, solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$ to get eigenvectors
+1. 解特征方程 $\\det(A - \\lambda I) = 0$ 得特征值 / Solve characteristic equation $\\det(A - \\lambda I) = 0$ to get eigenvalues
+2. 对每个 $\\lambda$，解 $(A - \\lambda I)\\mathbf{v} = \\mathbf{0}$ 得特征向量 / For each $\\lambda$, solve $(A - \\lambda I)\\mathbf{v} = \\mathbf{0}$ to get eigenvectors
 
 **重要性质：**
 **EN: Important Properties:**
@@ -346,29 +346,29 @@ A⁻¹ = (1/3) × [[2, -1], [-1, 2]] = [[2/3, -1/3], [-1/3, 2/3]]
 **与 PCA 的关系（IC 面试必问）：**
 **EN: Relationship with PCA (must-know for IC interview):**
 
-> PCA 就是对**协方差矩阵**做特征值分解。特征值 $\lambda_i$ 表示对应方向上的**方差大小**，特征向量是主成分方向。按 $\lambda$ 从大到小排序，取前 k 个 → 保留最多方差。
-> **EN:** PCA is essentially eigenvalue decomposition on the **covariance matrix**. Eigenvalues $\lambda_i$ represent the **variance** in each direction, and eigenvectors are the principal component directions. Sort by $\lambda$ from largest to smallest, take the top k → preserves the most variance.
+> PCA 就是对**协方差矩阵**做特征值分解。特征值 $\\lambda_i$ 表示对应方向上的**方差大小**，特征向量是主成分方向。按 $\\lambda$ 从大到小排序，取前 k 个 → 保留最多方差。
+> **EN:** PCA is essentially eigenvalue decomposition on the **covariance matrix**. Eigenvalues $\\lambda_i$ represent the **variance** in each direction, and eigenvectors are the principal component directions. Sort by $\\lambda$ from largest to smallest, take the top k → preserves the most variance.
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** 求 $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ 的特征值和特征向量
-**EN: Example 1:** Find eigenvalues and eigenvectors of $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$
+**例题 1：** 求 $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$ 的特征值和特征向量
+**EN: Example 1:** Find eigenvalues and eigenvectors of $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$
 
-$\det(A - \lambda I) = 0$:
+$\\det(A - \\lambda I) = 0$:
 
-$(2-\lambda)^2 - 1 = 0$ → $\lambda^2 - 4\lambda + 3 = 0$ → $\lambda_1 = 1$, $\lambda_2 = 3$
+$(2-\\lambda)^2 - 1 = 0$ → $\\lambda^2 - 4\\lambda + 3 = 0$ → $\\lambda_1 = 1$, $\\lambda_2 = 3$
 
-$\lambda_1 = 1$: $(A-I)\mathbf{v} = 0$ → $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = 0$ → $\mathbf{v}_1 = (1, -1)^T$
+$\\lambda_1 = 1$: $(A-I)\\mathbf{v} = 0$ → $\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}\\mathbf{v} = 0$ → $\\mathbf{v}_1 = (1, -1)^T$
 
-$\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = 0$ → $\mathbf{v}_2 = (1, 1)^T$
+$\\lambda_2 = 3$: $(A-3I)\\mathbf{v} = 0$ → $\\begin{pmatrix} -1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\mathbf{v} = 0$ → $\\mathbf{v}_2 = (1, 1)^T$
 
-**例题 2：** 求 $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ 的特征值
-**EN: Example 2:** Find eigenvalues of $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$
+**例题 2：** 求 $A = \\begin{pmatrix} 3 & 1 \\\\ 0 & 2 \\end{pmatrix}$ 的特征值
+**EN: Example 2:** Find eigenvalues of $A = \\begin{pmatrix} 3 & 1 \\\\ 0 & 2 \\end{pmatrix}$
 
-$\det(A - \lambda I) = (3-\lambda)(2-\lambda) = 0$ → $\lambda_1 = 3$, $\lambda_2 = 2$
+$\\det(A - \\lambda I) = (3-\\lambda)(2-\\lambda) = 0$ → $\\lambda_1 = 3$, $\\lambda_2 = 2$
 （三角矩阵的特征值就是对角线元素 / Eigenvalues of a triangular matrix are just the diagonal elements）
 
 ---
@@ -384,27 +384,27 @@ $\det(A - \lambda I) = (3-\lambda)(2-\lambda) = 0$ → $\lambda_1 = 3$, $\lambda
 
 | 条件 | 解的情况 |
 |------|----------|
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) = n$ | 唯一解 |
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) < n$ | 无穷多解 |
-| $\text{Rank}(A) \neq \text{Rank}([A|\mathbf{b}])$ | 无解 |
+| $\\text{Rank}(A) = \\text{Rank}([A|\\mathbf{b}]) = n$ | 唯一解 |
+| $\\text{Rank}(A) = \\text{Rank}([A|\\mathbf{b}]) < n$ | 无穷多解 |
+| $\\text{Rank}(A) \\neq \\text{Rank}([A|\\mathbf{b}])$ | 无解 |
 
 **EN:**
 | Condition | Solution Type |
 |-----------|---------------|
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) = n$ | Unique solution |
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) < n$ | Infinitely many solutions |
-| $\text{Rank}(A) \neq \text{Rank}([A|\mathbf{b}])$ | No solution |
+| $\\text{Rank}(A) = \\text{Rank}([A|\\mathbf{b}]) = n$ | Unique solution |
+| $\\text{Rank}(A) = \\text{Rank}([A|\\mathbf{b}]) < n$ | Infinitely many solutions |
+| $\\text{Rank}(A) \\neq \\text{Rank}([A|\\mathbf{b}])$ | No solution |
 
-**克莱默法则（2×2/3×3 好用）：** $x_i = \frac{\det(A_i)}{\det(A)}$
-**EN: Cramer's Rule (works well for 2×2/3×3):** $x_i = \frac{\det(A_i)}{\det(A)}$
+**克莱默法则（2×2/3×3 好用）：** $x_i = \\frac{\\det(A_i)}{\\det(A)}$
+**EN: Cramer's Rule (works well for 2×2/3×3):** $x_i = \\frac{\\det(A_i)}{\\det(A)}$
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 解 $\begin{cases} 2x + y = 5 \\ x - 2y = 0 \end{cases}$
-**EN: Example:** Solve $\begin{cases} 2x + y = 5 \\ x - 2y = 0 \end{cases}$
+**例题：** 解 $\\begin{cases} 2x + y = 5 \\\\ x - 2y = 0 \\end{cases}$
+**EN: Example:** Solve $\\begin{cases} 2x + y = 5 \\\\ x - 2y = 0 \\end{cases}$
 
 ```
 克莱默法则：det(A) = 2×(-2) - 1×1 = -5
@@ -426,18 +426,18 @@ y = det([[2,5],[1,0]]) / (-5) = (-5)/(-5) = 1
 
 | 公式 | 内容 |
 |------|------|
-| 加法 | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| 条件概率 | $P(B|A) = \frac{P(A \cap B)}{P(A)}$ |
-| 全概率 | $P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + \cdots$ |
-| 贝叶斯 | $P(B_i|A) = \frac{P(A|B_i)P(B_i)}{P(A)}$ |
+| 加法 | $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ |
+| 条件概率 | $P(B|A) = \\frac{P(A \\cap B)}{P(A)}$ |
+| 全概率 | $P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + \\cdots$ |
+| 贝叶斯 | $P(B_i|A) = \\frac{P(A|B_i)P(B_i)}{P(A)}$ |
 
 **EN:**
 | Formula | Content |
 |---------|---------|
-| Addition Rule | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| Conditional Probability | $P(B|A) = \frac{P(A \cap B)}{P(A)}$ |
-| Law of Total Probability | $P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + \cdots$ |
-| Bayes' Theorem | $P(B_i|A) = \frac{P(A|B_i)P(B_i)}{P(A)}$ |
+| Addition Rule | $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ |
+| Conditional Probability | $P(B|A) = \\frac{P(A \\cap B)}{P(A)}$ |
+| Law of Total Probability | $P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + \\cdots$ |
+| Bayes' Theorem | $P(B_i|A) = \\frac{P(A|B_i)P(B_i)}{P(A)}$ |
 
 ---
 
@@ -447,9 +447,9 @@ y = det([[2,5],[1,0]]) / (-5) = (-5)/(-5) = 1
 **例题：** 某工厂有 3 台机器 A/B/C，产量占比 40%/35%/25%，次品率 2%/3%/5%。随机抽一件是次品，求来自 A 的概率。
 **EN: Example:** A factory has 3 machines A/B/C with production proportions 40%/35%/25% and defect rates 2%/3%/5%. A randomly selected item is defective — find the probability it came from A.
 
-全概率公式：$P(\text{次品}) = 0.4 \times 0.02 + 0.35 \times 0.03 + 0.25 \times 0.05 = 0.031$
+全概率公式：$P(\\text{次品}) = 0.4 \\times 0.02 + 0.35 \\times 0.03 + 0.25 \\times 0.05 = 0.031$
 
-贝叶斯：$P(A|\text{次品}) = \frac{0.4 \times 0.02}{0.031} \approx 0.258$
+贝叶斯：$P(A|\\text{次品}) = \\frac{0.4 \\times 0.02}{0.031} \\approx 0.258$
 
 ---
 
@@ -462,15 +462,15 @@ y = det([[2,5],[1,0]]) / (-5) = (-5)/(-5) = 1
 | 分布 | 期望 | 方差 | 适用场景 |
 |------|------|------|----------|
 | 二项 $B(n,p)$ | $np$ | $np(1-p)$ | n 次独立试验成功次数 |
-| 泊松 $P(\lambda)$ | $\lambda$ | $\lambda$ | 单位时间稀有事件次数 |
-| 正态 $N(\mu, \sigma^2)$ | $\mu$ | $\sigma^2$ | 自然界大量现象 |
+| 泊松 $P(\\lambda)$ | $\\lambda$ | $\\lambda$ | 单位时间稀有事件次数 |
+| 正态 $N(\\mu, \\sigma^2)$ | $\\mu$ | $\\sigma^2$ | 自然界大量现象 |
 
 **EN:**
 | Distribution | Expectation | Variance | Use Case |
 |--------------|-------------|----------|----------|
 | Binomial $B(n,p)$ | $np$ | $np(1-p)$ | Number of successes in n independent trials |
-| Poisson $P(\lambda)$ | $\lambda$ | $\lambda$ | Number of rare events per unit time |
-| Normal $N(\mu, \sigma^2)$ | $\mu$ | $\sigma^2$ | Many natural phenomena |
+| Poisson $P(\\lambda)$ | $\\lambda$ | $\\lambda$ | Number of rare events per unit time |
+| Normal $N(\\mu, \\sigma^2)$ | $\\mu$ | $\\sigma^2$ | Many natural phenomena |
 
 ---
 
@@ -480,14 +480,14 @@ y = det([[2,5],[1,0]]) / (-5) = (-5)/(-5) = 1
 **例题 1：** 电话台每分钟呼叫 $P(3)$，求恰好 2 次的概率
 **EN: Example 1:** A call center receives calls at $P(3)$ per minute. Find the probability of exactly 2 calls.
 
-$P(X=2) = \frac{3^2 \cdot e^{-3}}{2!} \approx 0.224$
+$P(X=2) = \\frac{3^2 \\cdot e^{-3}}{2!} \\approx 0.224$
 
-**例题 2：** $X \sim N(5, 4)$，求 $P(3 < X < 9)$（已知 $\Phi(2)=0.9772$, $\Phi(1)=0.8413$）
-**EN: Example 2:** $X \sim N(5, 4)$, find $P(3 < X < 9)$ (given $\Phi(2)=0.9772$, $\Phi(1)=0.8413$)
+**例题 2：** $X \\sim N(5, 4)$，求 $P(3 < X < 9)$（已知 $\\Phi(2)=0.9772$, $\\Phi(1)=0.8413$）
+**EN: Example 2:** $X \\sim N(5, 4)$, find $P(3 < X < 9)$ (given $\\Phi(2)=0.9772$, $\\Phi(1)=0.8413$)
 
-标准化 $Z = \frac{X-5}{2}$
+标准化 $Z = \\frac{X-5}{2}$
 
-$P(3 < X < 9) = P(-1 < Z < 2) = \Phi(2) - (1-\Phi(1)) = 0.9772 - 0.1587 = 0.8185$
+$P(3 < X < 9) = P(-1 < Z < 2) = \\Phi(2) - (1-\\Phi(1)) = 0.9772 - 0.1587 = 0.8185$
 
 ---
 
@@ -497,8 +497,8 @@ $P(3 < X < 9) = P(-1 < Z < 2) = \Phi(2) - (1-\Phi(1)) = 0.9772 - 0.1587 = 0.8185
 ### 📑 知识卡片
 ### 📑 Knowledge Card
 
-**中心极限定理：** 大样本下 $\bar{X}_n \sim N(\mu, \sigma^2/n)$ —— 不管总体什么分布
-**EN: Central Limit Theorem:** For large samples, $\bar{X}_n \sim N(\mu, \sigma^2/n)$ — regardless of the underlying population distribution.
+**中心极限定理：** 大样本下 $\\bar{X}_n \\sim N(\\mu, \\sigma^2/n)$ —— 不管总体什么分布
+**EN: Central Limit Theorem:** For large samples, $\\bar{X}_n \\sim N(\\mu, \\sigma^2/n)$ — regardless of the underlying population distribution.
 
 **假设检验：** p-value $< 0.05$ → 拒绝 $H_0$
 **EN: Hypothesis Testing:** p-value $< 0.05$ → reject $H_0$
@@ -508,14 +508,14 @@ $P(3 < X < 9) = P(-1 < Z < 2) = \Phi(2) - (1-\Phi(1)) = 0.9772 - 0.1587 = 0.8185
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 灯泡声称寿命 1000h，抽 25 只样本均值 960h，标准差 100h。$\alpha=0.05$ 下是否低于声称值？
-**EN: Example:** Light bulbs claim 1000h lifespan. A sample of 25 has mean 960h and std 100h. At $\alpha=0.05$, is the lifespan below the claimed value?
+**例题：** 灯泡声称寿命 1000h，抽 25 只样本均值 960h，标准差 100h。$\\alpha=0.05$ 下是否低于声称值？
+**EN: Example:** Light bulbs claim 1000h lifespan. A sample of 25 has mean 960h and std 100h. At $\\alpha=0.05$, is the lifespan below the claimed value?
 
-$H_0: \mu = 1000$, $H_1: \mu < 1000$
+$H_0: \\mu = 1000$, $H_1: \\mu < 1000$
 
-$Z = \frac{960-1000}{100/\sqrt{25}} = -2$
+$Z = \\frac{960-1000}{100/\\sqrt{25}} = -2$
 
-$p \approx 0.0228 < 0.05$ → 拒绝 $H_0$ / reject $H_0$
+$p \\approx 0.0228 < 0.05$ → 拒绝 $H_0$ / reject $H_0$
 
 → 有足够证据认为寿命低于 1000h / Sufficient evidence that lifespan is below 1000h
 
