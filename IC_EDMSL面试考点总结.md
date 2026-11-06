@@ -45,7 +45,7 @@
 ③ 差异化：IC EDMSL 和别的学校不一样的地方
 ```
 
-**示例（直接抄结构，替换成你自己的）：**
+**示例（可以抄结构）：**
 
 > "My interest started when I took *Computational Methods in Geography* — we used PCA to analyze 50 years of temperature anomaly data across China, and that's when I realized environmental problems need both domain knowledge and ML. IC EDMSL's *Advanced Machine Learning for Earth Observation* directly covers this intersection. Also, your group's work on climate model downscaling is exactly what I want to explore."
 
