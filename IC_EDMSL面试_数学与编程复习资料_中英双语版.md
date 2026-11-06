@@ -323,7 +323,7 @@ A⁻¹ = (1/3) × [[2, -1], [-1, 2]] = [[2/3, -1/3], [-1/3, 2/3]]
 ## 2.4 特征值与特征向量 🔥🔥🔥（IC 面试头号考点）
 ## 2.4 Eigenvalues and Eigenvectors 🔥🔥🔥 (#1 topic in IC interview)
 
-> **IC 面试必考！** PCA 数学原理就基于此。
+> **IC 面试高频考点！** PCA 数学原理就基于此。
 > **EN:** **Guaranteed in IC interview!** This is the mathematical foundation of PCA.
 
 ### 📑 知识卡片

@@ -47,7 +47,7 @@
 
 ---
 
-## 1.1 必考 5 题 + 你可以直接套的模板
+## 1.1 高频 5 题 + 你可以直接套的模板
 ## 1.1 Five Mandatory Questions + Ready-to-Use Templates
 
 ### Q1 · Motivation（第一个问题，必问）
@@ -222,7 +222,7 @@
 
 ---
 
-## 3.1 微分方程 ODE（必考 ★★★★★）
+## 3.1 微分方程 ODE（核心 ★★★★★）
 ## 3.1 Differential Equations ODE (Guaranteed ★★★★★)
 
 ### 📑 你必须记住的公式
@@ -243,7 +243,7 @@ $$\frac{dy}{dx} + P(x)y = Q(x)$$
 3. 两边积分 → $\mu(x) \cdot y = \int \mu(x) Q(x)\, dx + C$
 4. 解出 $y$ → $y = \frac{1}{\mu(x)} \left[ \int \mu(x) Q(x)\, dx + C \right]$"
 
-**Euler 法（显式欧拉，数值解必考）：**
+**Euler 法（显式欧拉，数值解高频）：**
 
 **EN: Euler method (explicit Euler, guaranteed for numerical solutions):**
 
@@ -324,7 +324,7 @@ x3=0.3, y3 = 1.22 + 0.1*(1.22+0.2) = 1.3622
 
 ---
 
-## 3.2 线性代数（必考 ★★★★★）
+## 3.2 线性代数（核心 ★★★★★）
 ## 3.2 Linear Algebra (Guaranteed ★★★★★)
 
 ### 📑 你必须记住的
@@ -464,7 +464,7 @@ $$\theta_{t+1} = \theta_t - \eta \cdot \nabla_\theta J(\theta)$$
 
 ---
 
-## 3.4 Python 基础概念（必考 ★★★★★）
+## 3.4 Python 基础概念（核心 ★★★★★）
 ## 3.4 Python Basic Concepts (Guaranteed ★★★★★)
 
 ### 📑 一眼看懂的对比表
