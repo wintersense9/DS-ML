@@ -374,19 +374,19 @@ $\det(A - \lambda I) = (3-\lambda)(2-\lambda) = 0$ → $\lambda_1 = 3$, $\lambda
 
 | 条件 | 解的情况 |
 |------|----------|
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) = n$ | 唯一解 |
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) < n$ | 无穷多解 |
-| $\text{Rank}(A) \neq \text{Rank}([A|\mathbf{b}])$ | 无解 |
+| <img src="assets/math/rank_eq_n.png" width="240" style="vertical-align:middle"> | 唯一解 |
+| <img src="assets/math/rank_lt_n.png" width="240" style="vertical-align:middle"> | 无穷多解 |
+| <img src="assets/math/rank_neq.png" width="205" style="vertical-align:middle"> | 无解 |
 
 **EN:**
 | Condition | Solution Type |
 |-----------|---------------|
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) = n$ | Unique solution |
-| $\text{Rank}(A) = \text{Rank}([A|\mathbf{b}]) < n$ | Infinitely many solutions |
-| $\text{Rank}(A) \neq \text{Rank}([A|\mathbf{b}])$ | No solution |
+| <img src="assets/math/rank_eq_n.png" width="240" style="vertical-align:middle"> | Unique solution |
+| <img src="assets/math/rank_lt_n.png" width="240" style="vertical-align:middle"> | Infinitely many solutions |
+| <img src="assets/math/rank_neq.png" width="205" style="vertical-align:middle"> | No solution |
 
-**克莱默法则（2×2/3×3 好用）：** $x_i = \frac{\det(A_i)}{\det(A)}$
-**EN: Cramer's Rule (works well for 2×2/3×3):** $x_i = \frac{\det(A_i)}{\det(A)}$
+**克莱默法则（2×2/3×3 好用）：** <img src="assets/math/cramer.png" width="117" style="vertical-align:middle">
+**EN: Cramer's Rule (works well for 2×2/3×3):** <img src="assets/math/cramer.png" width="117" style="vertical-align:middle">
 
 ---
 
