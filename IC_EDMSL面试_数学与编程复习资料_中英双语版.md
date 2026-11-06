@@ -132,18 +132,16 @@ lim (2e^{2x}) / 1 = 2e^0 = 2
 **例题 1：** 求 $y = x^3 \cdot e^x$ 的导数
 **EN: Example 1:** Find the derivative of $y = x^3 \cdot e^x$
 
-```
-乘积法则：u = x³, v = eˣ
-y' = 3x²·eˣ + x³·eˣ = eˣ(3x² + x³)
-```
+乘积法则：$u = x^3$, $v = e^x$
+
+$y' = 3x^2 \cdot e^x + x^3 \cdot e^x = e^x(3x^2 + x^3)$
 
 **例题 2：** 求 $y = \ln(x^2 + 1)$ 的导数
 **EN: Example 2:** Find the derivative of $y = \ln(x^2 + 1)$
 
-```
-链式法则：外层 f(u)=ln u, 内层 g(x)=x²+1
-y' = (1/(x²+1)) · 2x = 2x/(x²+1)
-```
+链式法则：外层 $f(u) = \ln u$, 内层 $g(x) = x^2 + 1$
+
+$y' = \frac{1}{x^2+1} \cdot 2x = \frac{2x}{x^2+1}$
 
 **例题 3：** 求 $f(x) = x^4 - 2x^2 + 1$ 的极值
 **EN: Example 3:** Find the extrema of $f(x) = x^4 - 2x^2 + 1$
@@ -199,10 +197,9 @@ f''(1) = 8 > 0 → x=1 极小值点，f(1)=0
 **例题 1：** $\int x \cdot e^x dx$
 **EN: Example 1:** $\int x \cdot e^x dx$
 
-```
-分部积分：u=x, dv=eˣdx → du=dx, v=eˣ
-∫ x·eˣ dx = x·eˣ - ∫ eˣ dx = eˣ(x-1) + C
-```
+分部积分：$u = x$, $dv = e^x\, dx$ → $du = dx$, $v = e^x$
+
+$\int x \cdot e^x\, dx = x \cdot e^x - \int e^x\, dx = e^x(x-1) + C$
 
 **例题 2：** $\int_0^2 (x^2 - 1) dx$
 **EN: Example 2:** $\int_0^2 (x^2 - 1) dx$
@@ -360,22 +357,19 @@ A⁻¹ = (1/3) × [[2, -1], [-1, 2]] = [[2/3, -1/3], [-1/3, 2/3]]
 **例题 1：** 求 $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ 的特征值和特征向量
 **EN: Example 1:** Find eigenvalues and eigenvectors of $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$
 
-```
-det(A - λI) = 0:
-(2-λ)² - 1 = 0 → λ² - 4λ + 3 = 0 → λ₁=1, λ₂=3
+$\det(A - \lambda I) = 0$:
 
-λ₁=1: (A-I)v=0 → [[1,1],[1,1]]v=0 → v₁ = (1, -1)ᵀ
-λ₂=3: (A-3I)v=0 → [[-1,1],[1,-1]]v=0 → v₂ = (1, 1)ᵀ
-```
+$(2-\lambda)^2 - 1 = 0$ → $\lambda^2 - 4\lambda + 3 = 0$ → $\lambda_1 = 1$, $\lambda_2 = 3$
+
+$\lambda_1 = 1$: $(A-I)\mathbf{v} = 0$ → $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = 0$ → $\mathbf{v}_1 = (1, -1)^T$
+
+$\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = 0$ → $\mathbf{v}_2 = (1, 1)^T$
 
 **例题 2：** 求 $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ 的特征值
 **EN: Example 2:** Find eigenvalues of $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$
 
-```
-det(A - λI) = (3-λ)(2-λ) = 0 → λ₁=3, λ₂=2
-（三角矩阵的特征值就是对角线元素）
-(Eigenvalues of a triangular matrix are just the diagonal elements)
-```
+$\det(A - \lambda I) = (3-\lambda)(2-\lambda) = 0$ → $\lambda_1 = 3$, $\lambda_2 = 2$
+（三角矩阵的特征值就是对角线元素 / Eigenvalues of a triangular matrix are just the diagonal elements）
 
 ---
 
@@ -453,10 +447,9 @@ y = det([[2,5],[1,0]]) / (-5) = (-5)/(-5) = 1
 **例题：** 某工厂有 3 台机器 A/B/C，产量占比 40%/35%/25%，次品率 2%/3%/5%。随机抽一件是次品，求来自 A 的概率。
 **EN: Example:** A factory has 3 machines A/B/C with production proportions 40%/35%/25% and defect rates 2%/3%/5%. A randomly selected item is defective — find the probability it came from A.
 
-```
-全概率公式：P(次品) = 0.4×0.02 + 0.35×0.03 + 0.25×0.05 = 0.031
-贝叶斯：P(A|次品) = 0.4×0.02 / 0.031 ≈ 0.258
-```
+全概率公式：$P(\text{次品}) = 0.4 \times 0.02 + 0.35 \times 0.03 + 0.25 \times 0.05 = 0.031$
+
+贝叶斯：$P(A|\text{次品}) = \frac{0.4 \times 0.02}{0.031} \approx 0.258$
 
 ---
 
@@ -487,17 +480,14 @@ y = det([[2,5],[1,0]]) / (-5) = (-5)/(-5) = 1
 **例题 1：** 电话台每分钟呼叫 $P(3)$，求恰好 2 次的概率
 **EN: Example 1:** A call center receives calls at $P(3)$ per minute. Find the probability of exactly 2 calls.
 
-```
-P(X=2) = (3² · e^(-3)) / 2! ≈ 0.224
-```
+$P(X=2) = \frac{3^2 \cdot e^{-3}}{2!} \approx 0.224$
 
 **例题 2：** $X \sim N(5, 4)$，求 $P(3 < X < 9)$（已知 $\Phi(2)=0.9772$, $\Phi(1)=0.8413$）
 **EN: Example 2:** $X \sim N(5, 4)$, find $P(3 < X < 9)$ (given $\Phi(2)=0.9772$, $\Phi(1)=0.8413$)
 
-```
-标准化 Z = (X-5)/2
-P(3<X<9) = P(-1<Z<2) = Φ(2) - (1-Φ(1)) = 0.9772 - 0.1587 = 0.8185
-```
+标准化 $Z = \frac{X-5}{2}$
+
+$P(3 < X < 9) = P(-1 < Z < 2) = \Phi(2) - (1-\Phi(1)) = 0.9772 - 0.1587 = 0.8185$
 
 ---
 
@@ -521,13 +511,13 @@ P(3<X<9) = P(-1<Z<2) = Φ(2) - (1-Φ(1)) = 0.9772 - 0.1587 = 0.8185
 **例题：** 灯泡声称寿命 1000h，抽 25 只样本均值 960h，标准差 100h。$\alpha=0.05$ 下是否低于声称值？
 **EN: Example:** Light bulbs claim 1000h lifespan. A sample of 25 has mean 960h and std 100h. At $\alpha=0.05$, is the lifespan below the claimed value?
 
-```
-H₀: μ=1000, H₁: μ<1000
-Z = (960-1000)/(100/√25) = -2
-p ≈ 0.0228 < 0.05 → 拒绝 H₀
-→ 有足够证据认为寿命低于 1000h
-→ Sufficient evidence that lifespan is below 1000h
-```
+$H_0: \mu = 1000$, $H_1: \mu < 1000$
+
+$Z = \frac{960-1000}{100/\sqrt{25}} = -2$
+
+$p \approx 0.0228 < 0.05$ → 拒绝 $H_0$ / reject $H_0$
+
+→ 有足够证据认为寿命低于 1000h / Sufficient evidence that lifespan is below 1000h
 
 ---
 

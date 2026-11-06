@@ -238,12 +238,10 @@ $$\frac{dy}{dx} + P(x)y = Q(x)$$
 
 **EN: Four steps of the integrating factor method (memorize this):**
 
-```
-Step 1: 算积分因子  μ(x) = e^(∫ P(x) dx)
-Step 2: 两边乘 μ(x) → 左边凑成 d/dx [μ(x)·y]
-Step 3: 两边积分 → μ(x)·y = ∫ μ(x)Q(x)dx + C
-Step 4: 解出 y → y = (1/μ(x)) [∫ μ(x)Q(x)dx + C]
-```
+1. 算积分因子  $\mu(x) = e^{\int P(x)\, dx}$
+2. 两边乘 $\mu(x)$ → 左边凑成 $\frac{d}{dx}[\mu(x) \cdot y]$
+3. 两边积分 → $\mu(x) \cdot y = \int \mu(x) Q(x)\, dx + C$
+4. 解出 $y$ → $y = \frac{1}{\mu(x)} \left[ \int \mu(x) Q(x)\, dx + C \right]$"
 
 **Euler 法（显式欧拉，数值解必考）：**
 
@@ -276,16 +274,12 @@ $$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
-```
-Step 1: P(x) = -2, Q(x) = e^{3x}
-Step 2: μ(x) = e^{∫(-2)dx} = e^{-2x}
-Step 3: e^{-2x}·y' - 2e^{-2x}·y = e^{x}
-        → d/dx [e^{-2x}·y] = e^{x}
-Step 4: e^{-2x}·y = ∫ e^{x}dx = e^{x} + C
-Step 5: y = e^{3x} + C·e^{2x}
-Step 6: y(0)=0 → 0 = 1 + C → C = -1
-        → y = e^{3x} - e^{2x}
-```
+Step 1: $P(x) = -2$, $Q(x) = e^{3x}$
+Step 2: $\mu(x) = e^{\int (-2)\, dx} = e^{-2x}$
+Step 3: $e^{-2x} \cdot y' - 2e^{-2x} \cdot y = e^{x}$  →  $\frac{d}{dx}[e^{-2x} \cdot y] = e^{x}$
+Step 4: $e^{-2x} \cdot y = \int e^{x}\, dx = e^{x} + C$
+Step 5: $y = e^{3x} + C \cdot e^{2x}$
+Step 6: $y(0) = 0$ → $0 = 1 + C$ → $C = -1$ → $y = e^{3x} - e^{2x}$
 
 </details>
 
@@ -381,17 +375,15 @@ $$A\mathbf{v} = \lambda\mathbf{v} \quad \Rightarrow \quad \det(A - \lambda I) = 
 
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
-```
-det(A - λI) = 0:
-|2-λ   1  |
-| 1   2-λ | = 0
+$\det(A - \lambda I) = 0$:
 
-(2-λ)² - 1 = 0 → λ² - 4λ + 3 = 0
-→ λ₁ = 1, λ₂ = 3
+$$\begin{vmatrix} 2-\lambda & 1 \\ 1 & 2-\lambda \end{vmatrix} = 0$$
 
-λ₁=1: (A-I)v=0 → v₁ = (1, -1)ᵀ
-λ₂=3: (A-3I)v=0 → v₂ = (1, 1)ᵀ
-```
+$(2-\lambda)^2 - 1 = 0$ → $\lambda^2 - 4\lambda + 3 = 0$ → $\lambda_1 = 1$, $\lambda_2 = 3$
+
+$\lambda_1 = 1$: $(A-I)\mathbf{v} = 0$ → $\mathbf{v}_1 = (1, -1)^T$
+
+$\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → $\mathbf{v}_2 = (1, 1)^T$
 
 </details>
 
