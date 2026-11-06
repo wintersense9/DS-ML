@@ -369,15 +369,15 @@ $$A\mathbf{v} = \lambda\mathbf{v} \quad \Rightarrow \quad \det(A - \lambda I) = 
 ### 🎯 真题手算
 ### 🎯 Real Interview Questions — Work Them Out
 
-**真题 1：** 求 $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$ 的特征值和特征向量
+**真题 1：** 求 <img src="assets/math/A_2112.png" width="112" style="vertical-align:middle"> 的特征值和特征向量
 
-**EN: Real question 1:** Find the eigenvalues and eigenvectors of $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
+**EN: Real question 1:** Find the eigenvalues and eigenvectors of <img src="assets/math/A_2112.png" width="112" style="vertical-align:middle">
 
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
 $\det(A - \lambda I) = 0$:
 
-$$$\begin{vmatrix} 2-\lambda & 1 \\ 1 & 2-\lambda \end{vmatrix} = 0$$$
+<img src="assets/math/char_det.png" width="173">
 
 $(2-\lambda)^2 - 1 = 0$ → $\lambda^2 - 4\lambda + 3 = 0$ → $\lambda_1 = 1$, $\lambda_2 = 3$
 
@@ -389,9 +389,9 @@ $\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → $\mathbf{v}_2 = (1, 1)^T$
 
 ---
 
-**真题 2：** 矩阵 $$A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$$ 的秩？为什么？
+**真题 2：** 矩阵 <img src="assets/math/rank_A2.png" width="135" style="vertical-align:middle"> 的秩？为什么？
 
-**EN: Real question 2:** What is the rank of $$A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$$? Why?
+**EN: Real question 2:** What is the rank of <img src="assets/math/rank_A2.png" width="135" style="vertical-align:middle">? Why?
 
 <details><summary>点我看标准答案 / Click to see the standard answer</summary>
 
@@ -415,13 +415,13 @@ So there is only 1 linearly independent row → rank = 1.
 
 | # | 题目 (Question) | 难度 (Difficulty) |
 |---|----------------|-------------------|
-| 1 | $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ 的特征值 | 基础 |
-| 2 | $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$ 的秩 | 中等 |
+| 1 | <img src="assets/math/A_3102.png" width="80" style="vertical-align:middle"> 的特征值 | 基础 |
+| 2 | <img src="assets/math/rank_A3.png" width="80" style="vertical-align:middle"> 的秩 | 中等 |
 | 3 | 为什么 PCA 要找最大的特征值？（用嘴说出来） | 中等 |
 
 **EN:**
-1. Eigenvalues of $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ — Basic
-2. Rank of $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$ — Medium
+1. Eigenvalues of <img src="assets/math/A_3102.png" width="112" style="vertical-align:middle"> — Basic
+2. Rank of <img src="assets/math/rank_A3.png" width="142" style="vertical-align:middle"> — Medium
 3. Why does PCA look for the largest eigenvalues? (Explain verbally) — Medium
 
 ---

@@ -222,21 +222,21 @@ $\int x \cdot e^x\, dx = x \cdot e^x - \int e^x\, dx = e^x(x-1) + C$
 **矩阵乘法：** $C_{ij} = \sum_{k=1}^n A_{ik} B_{kj}$
 **EN: Matrix Multiplication:** $C_{ij} = \sum_{k=1}^n A_{ik} B_{kj}$
 
-**2×2 行列式：** $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
-**EN: 2×2 Determinant:** $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
+**2×2 行列式：** <img src="assets/math/det2.png" width="194" style="vertical-align:middle">
+**EN: 2×2 Determinant:** <img src="assets/math/det2.png" width="194" style="vertical-align:middle">
 
 **3×3 行列式（按第一行展开）：**
 **EN: 3×3 Determinant (expanding along the first row):**
 
-$$$\det\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} = a(ei - fh) - b(di - fg) + c(dh - eg)$$$
+<img src="assets/math/det3.png" width="441">
 
 ---
 
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** $$\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \times \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$$
-**EN: Example 1:** $$\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \times \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$$
+**例题 1：** <img src="assets/math/matmul2x2.png" width="154" style="vertical-align:middle">
+**EN: Example 1:** <img src="assets/math/matmul2x2.png" width="154" style="vertical-align:middle">
 
 ```
 C₁₁=1×5+2×7=19, C₁₂=1×6+2×8=22
@@ -244,8 +244,8 @@ C₂₁=3×5+4×7=43, C₂₂=3×6+4×8=50
 → [[19,22],[43,50]]
 ```
 
-**例题 2：** $$\det\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$$
-**EN: Example 2:** $$\det\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$$
+**例题 2：** <img src="assets/math/det3_num.png" width="136" style="vertical-align:middle">
+**EN: Example 2:** <img src="assets/math/det3_num.png" width="136" style="vertical-align:middle">
 
 ```
 = 1×(45-48) - 2×(36-42) + 3×(32-35)
@@ -279,8 +279,8 @@ C₂₁=3×5+4×7=43, C₂₂=3×6+4×8=50
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 求 $$A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 0 & 1 \end{pmatrix}$$ 的秩
-**EN: Example:** Find the rank of $$A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 0 & 1 \end{pmatrix}$$
+**例题：** 求 <img src="assets/math/rank_A.png" width="142" style="vertical-align:middle"> 的秩
+**EN: Example:** Find the rank of <img src="assets/math/rank_A.png" width="142" style="vertical-align:middle">
 
 ```
 行变换：
@@ -299,8 +299,8 @@ R₃ = R₃ - R₁ → [[1, 2, 3], [0, 0, 0], [0, -2, -2]]
 ### 📑 知识卡片
 ### 📑 Knowledge Card
 
-**方法一（2×2 简单）：** $$A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
-**EN: Method 1 (simple for 2×2):** $$A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
+**方法一（2×2 简单）：** <img src="assets/math/inv_formula.png" width="199" style="vertical-align:middle">
+**EN: Method 1 (simple for 2×2):** <img src="assets/math/inv_formula.png" width="199" style="vertical-align:middle">
 
 **方法二（通用）：** 高斯-约旦消元 $[A|I] \to [I|A^{-1}]$
 **EN: Method 2 (general):** Gauss-Jordan elimination $[A|I] \to [I|A^{-1}]$
@@ -310,8 +310,8 @@ R₃ = R₃ - R₁ → [[1, 2, 3], [0, 0, 0], [0, -2, -2]]
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 求 $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$ 的逆
-**EN: Example:** Find the inverse of $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
+**例题：** 求 <img src="assets/math/A_2112.png" width="112" style="vertical-align:middle"> 的逆
+**EN: Example:** Find the inverse of <img src="assets/math/A_2112.png" width="112" style="vertical-align:middle">
 
 ```
 det(A) = 4 - 1 = 3
@@ -354,19 +354,19 @@ A⁻¹ = (1/3) × [[2, -1], [-1, 2]] = [[2/3, -1/3], [-1/3, 2/3]]
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题 1：** 求 $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$ 的特征值和特征向量
-**EN: Example 1:** Find eigenvalues and eigenvectors of $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
+**例题 1：** 求 <img src="assets/math/A_2112.png" width="112" style="vertical-align:middle"> 的特征值和特征向量
+**EN: Example 1:** Find eigenvalues and eigenvectors of <img src="assets/math/A_2112.png" width="112" style="vertical-align:middle">
 
 $\det(A - \lambda I) = 0$:
 
 $(2-\lambda)^2 - 1 = 0$ → $\lambda^2 - 4\lambda + 3 = 0$ → $\lambda_1 = 1$, $\lambda_2 = 3$
 
-$\lambda_1 = 1$: $(A-I)\mathbf{v} = 0$ → $$\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = 0$$ → $\mathbf{v}_1 = (1, -1)^T$
+$\lambda_1 = 1$: $(A-I)\mathbf{v} = 0$ → <img src="assets/math/eigvec1.png" width="119" style="vertical-align:middle"> → $\mathbf{v}_1 = (1, -1)^T$
 
-$\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → $$\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = 0$$ → $\mathbf{v}_2 = (1, 1)^T$
+$\lambda_2 = 3$: $(A-3I)\mathbf{v} = 0$ → <img src="assets/math/eigvec2.png" width="147" style="vertical-align:middle"> → $\mathbf{v}_2 = (1, 1)^T$
 
-**例题 2：** 求 $$A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$$ 的特征值
-**EN: Example 2:** Find eigenvalues of $$A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$$
+**例题 2：** 求 <img src="assets/math/A_3102.png" width="112" style="vertical-align:middle"> 的特征值
+**EN: Example 2:** Find eigenvalues of <img src="assets/math/A_3102.png" width="112" style="vertical-align:middle">
 
 $\det(A - \lambda I) = (3-\lambda)(2-\lambda) = 0$ → $\lambda_1 = 3$, $\lambda_2 = 2$
 （三角矩阵的特征值就是对角线元素 / Eigenvalues of a triangular matrix are just the diagonal elements）
@@ -403,8 +403,8 @@ $\det(A - \lambda I) = (3-\lambda)(2-\lambda) = 0$ → $\lambda_1 = 3$, $\lambda
 ### 🎯 经典例题
 ### 🎯 Classic Examples
 
-**例题：** 解 $$\begin{cases} 2x + y = 5 \\ x - 2y = 0 \end{cases}$$
-**EN: Example:** Solve $$\begin{cases} 2x + y = 5 \\ x - 2y = 0 \end{cases}$$
+**例题：** 解 <img src="assets/math/system.png" width="112" style="vertical-align:middle">
+**EN: Example:** Solve <img src="assets/math/system.png" width="112" style="vertical-align:middle">
 
 ```
 克莱默法则：det(A) = 2×(-2) - 1×1 = -5
