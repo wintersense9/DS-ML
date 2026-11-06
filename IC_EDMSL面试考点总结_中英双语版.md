@@ -151,7 +151,7 @@
 | 3 | 最相关的一门课 | ★★★★ | 找 EDMSL 课程手册里的对应项 |
 | 4 | 会什么编程语言？哪个最熟？ | ★★★★ | 诚实说，但准备一个能展开的 |
 | 5 | numpy / pandas 会吗 | ★★★ | 会就说，准备一个场景 |
-| 6 | Python class / OOP 经验？ | ★★★ | 准备一个小例子 |
+| 6 | Python class / OOP(object oriented programming) 经验？ | ★★★ | 准备一个小例子 |
 | 7 | Future career plan | ★★ | 别空，结合 EDMSL 方向 |
 
 **EN:**
