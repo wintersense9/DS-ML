@@ -1,15 +1,5 @@
 # 📘 IC EDMSL 面试 · 数学与编程复习资料
 # 📘 IC EDMSL Interview · Math & Programming Review Materials
-
-> **用途：** 帝国理工 EDMSL 面试的**数学 + 编程补充复习**（面试 Skill Test 部分）
-> **EN:** **Purpose:** Supplementary review for Imperial College EDMSL interview **Math + Programming** (Skill Test section)
->
-> **参考来源：** 香港大学数据科学笔试大纲 + 3 份数学真题 + 计算机编程真题
-> **EN:** **Sources:** HKU Data Science written exam syllabus + 3 past math papers + computer programming past papers
->
-> **使用方式：** 先刷主手册的 ODE/特征值/CSV 水果题，这本用来补微积分、概率、更多编程题
-> **EN:** **How to use:** First complete the main handbook's ODE/eigenvalues/CSV fruit problems; use this book to supplement calculus, probability, and more programming problems
-
 ---
 
 # ⚡ 快速导航
